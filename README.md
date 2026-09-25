@@ -123,7 +123,7 @@ quarto render report.qmd
 
 For the complete methodology, analysis, visualizations, interpretation, and limitations:
 
-**[View the full analytical report](report.html)**
+**[View the full analytical report](https://amoseyal.github.io/us-airline-performance-analysis/report.html)**
 
 The underlying Quarto source is available in [`report.qmd`](report.qmd).
 
