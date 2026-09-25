@@ -1,0 +1,22 @@
+# Raw and processed data
+data/raw/*
+data/processed/*
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# R session files
+.Rhistory
+.RData
+.Ruserdata
+
+# RStudio project files
+.Rproj.user/
+
+# macOS
+.DS_Store
+
+# Quarto generated files
+/.quarto/
+_site/
