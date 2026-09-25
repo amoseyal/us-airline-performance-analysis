@@ -137,11 +137,11 @@ For route comparisons, the analysis includes directional routes with at least **
 
 The project uses a staged workflow:
 
-1. **Import and cleaning** — raw BTS monthly files are validated, standardized, and combined.
-2. **Storage** — the cleaned annual dataset is stored in Parquet format.
-3. **Analysis** — DuckDB queries aggregate the flight-level dataset into analytical summary tables.
-4. **Visualization** — R and ggplot2 transform the analytical outputs into report-ready figures.
-5. **Reporting** — Quarto integrates the methodology, findings, and visualizations into the final report.
+1. **Import and cleaning** - raw BTS monthly files are validated, standardized, and combined.
+2. **Storage** - the cleaned annual dataset is stored in Parquet format.
+3. **Analysis** - DuckDB queries aggregate the flight-level dataset into analytical summary tables.
+4. **Visualization** - R and ggplot2 transform the analytical outputs into report-ready figures.
+5. **Reporting** - Quarto integrates the methodology, findings, and visualizations into the final report.
 
 This structure separates data preparation, analysis, visualization, and reporting while avoiding repeated processing of the full flight-level dataset.
 
@@ -163,7 +163,7 @@ Performance improved during August and reached the annual low in **September, wh
 
 Average arrival delays followed a similar pattern. July recorded the highest monthly average at **17.35 minutes**, compared with only **2.32 minutes in September**.
 
-The median arrival delay remained negative in every month, ranging from −8 minutes to −3 minutes. Even during June, July, and December—months with relatively high average delays—the median completed flight still arrived ahead of schedule. This contrast highlights the influence of substantially delayed flights on monthly averages.
+The median arrival delay remained negative in every month, ranging from −8 minutes to −3 minutes. Even during June, July, and December months with relatively high average delays, the median completed flight still arrived ahead of schedule. This contrast highlights the influence of substantially delayed flights on monthly averages.
 
 ## Monthly Cancellations
 
