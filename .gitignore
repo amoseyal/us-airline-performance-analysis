@@ -20,3 +20,6 @@ data/temp/*
 # Quarto
 .quarto/
 _site/
+
+# R graphics output
+Rplots.pdf

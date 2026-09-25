@@ -383,6 +383,81 @@ cat(
 )
 
 
+# Save analysis results
+
+analysis_dir <- here(
+  "data",
+  "processed",
+  "analysis"
+)
+
+dir.create(
+  analysis_dir,
+  showWarnings = FALSE,
+  recursive = TRUE
+)
+
+write_csv(
+  overall_performance,
+  here(
+    "data",
+    "processed",
+    "analysis",
+    "overall_performance.csv"
+  )
+)
+
+write_csv(
+  monthly_performance,
+  here(
+    "data",
+    "processed",
+    "analysis",
+    "monthly_performance.csv"
+  )
+)
+
+write_csv(
+  airline_performance,
+  here(
+    "data",
+    "processed",
+    "analysis",
+    "airline_performance.csv"
+  )
+)
+
+write_csv(
+  airport_performance,
+  here(
+    "data",
+    "processed",
+    "analysis",
+    "airport_performance.csv"
+  )
+)
+
+write_csv(
+  delay_causes,
+  here(
+    "data",
+    "processed",
+    "analysis",
+    "delay_causes.csv"
+  )
+)
+
+write_csv(
+  route_performance,
+  here(
+    "data",
+    "processed",
+    "analysis",
+    "route_performance.csv"
+  )
+)
+
+
 # Disconnect from DuckDB
 
 dbDisconnect(con, shutdown = TRUE)
